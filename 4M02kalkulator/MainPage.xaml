@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_4M02kalkulator.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <HorizontalStackLayout Spacing="10">
+                <Entry
+                Placeholder="podaj liczbę"
+                x:Name="entLiczba"
+                />
+                <Button
+                Text="dodaj"
+                Clicked="btnDodajClicked"
+                />
+            </HorizontalStackLayout>
+
+
+            <Label
+                Text="suma: 0"
+                x:Name="lblWynik"
+                />
+            <Rectangle
+                BackgroundColor="Black"
+                HeightRequest="2"
+                />
+            <Label
+                Text="napis próbny"
+                x:Name="lblNapis"
+                />
+            <HorizontalStackLayout Spacing="10">
+                <Entry
+                    Placeholder="podaj rozmiar"
+                    WidthRequest="200"
+                    x:Name="enRozmiar"
+                    />
+                <Button
+                    Text="Ustaw rozmiar czcionki"
+                    Clicked="btnRozmiarClick"
+                    />
+            </HorizontalStackLayout>
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
